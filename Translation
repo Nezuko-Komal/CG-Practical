@@ -1,11 +1,11 @@
 #include<graphics.h>
 #include<conio.h>
-void main()
+int main()
 {
   int i;
   int gd = DETECT,gm;
-  int x2,y2,x1,y1,,x,y;
-  initgraph(&gd,gm,"C:\\TURBOC3\\BGI");
+  int x2,y2,x1,y1,x,y;
+  initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
   printf("Enter the 2 line end point : x1,y1,x2,y2:\n");
   scanf("%d\n%d\n%d\n%d",&x1,&y1,&x2,&y2);
   line(x1,y1,x2,y2);
@@ -17,5 +17,8 @@ void main()
   y2 = (y2+x);
   printf("Line after translation");
   line(x1,y1,x2,y2);
-  getch()
-  closegraph():
+  getch();
+  closegraph();
+  }
+  
+  
